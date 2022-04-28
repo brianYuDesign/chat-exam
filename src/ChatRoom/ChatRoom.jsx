@@ -77,7 +77,7 @@ const ChatRoom = (props) => {
                   alt="avatar"
                 />
                 <div className="about">
-                  <div className="name">{item.id}</div>
+                  <div className="name">{item.client.name}</div>
                   <div className="status">
                     <i className="fa fa-circle online"></i>{" "}
                     {moment(item.updatedAt).fromNow()}
@@ -90,18 +90,6 @@ const ChatRoom = (props) => {
       </div>
 
       <div className="chat">
-        <div className="chat-header clearfix">
-          <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01_green.jpg"
-            alt="avatar"
-          />
-
-          <div className="chat-about">
-            <div className="chat-with">{chatId}</div>
-          </div>
-          <i className="fa fa-star"></i>
-        </div>
-
         <div className="chat-history">
           <ul>
             {messages
