@@ -14,7 +14,7 @@ const Home = () => {
     <div className="home-container">
       <input
         type="text"
-        placeholder="Username"
+        placeholder="Please typing username(user1, user2, user3, user4)"
         value={username}
         onChange={handleUsernameChange}
         className="text-input-field"
