@@ -63,6 +63,7 @@ const ChatRoom = (props) => {
   return (
     <div className="chat-room-container">
       {!user.id && <h1> user not found</h1>}
+      <h1 className="room-name">User: {username}</h1>
 
       {user?.chatList?.map((item, index) => (
         <>
