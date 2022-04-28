@@ -79,7 +79,8 @@ const ChatRoom = (props) => {
                 <div className="about">
                   <div className="name">{item.id}</div>
                   <div className="status">
-                    <i className="fa fa-circle online"></i> {item.lastMessage}
+                    <i className="fa fa-circle online"></i>{" "}
+                    {moment(item.updatedAt).fromNow()}
                   </div>
                 </div>
               </Link>
@@ -119,7 +120,7 @@ const ChatRoom = (props) => {
                     }`}
                   >
                     <span className="message-data-time">
-                      {message.createdAt}
+                      {moment(message.createdAt).fromNow()}
                     </span>
                     &nbsp; &nbsp;
                     <span className="message-data-name">{}</span>{" "}
